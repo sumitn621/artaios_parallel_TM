@@ -1,0 +1,33 @@
+$partitioning 
+  leftatoms 1
+  centralatoms 2
+  rightatoms 3
+$end
+
+$energy_range
+  start  -8.0
+  end     -2.0
+  steps   100 
+$end
+
+$system
+  nspin  4
+$end
+
+$electrodes
+   self_energy wbl
+   dos_s 0.036
+  fermi_level -5.0
+$end
+
+$general
+  do_transport
+  qcprog tm
+  mosfile dscf.out
+  rbas basis
+$end
+
+$debug
+  xyzfile coord
+$end
+
